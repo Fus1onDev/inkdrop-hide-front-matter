@@ -1,7 +1,7 @@
 {
   "name": "hide-front-matter",
   "main": "./src/index",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Hide front-matter from the list",
   "keywords": [],
   "repository": "https://github.com/Fus1onDev/inkdrop-hide-front-matter",
