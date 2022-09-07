@@ -1,0 +1,16 @@
+{
+  "name": "hide-front-matter",
+  "main": "./src/index",
+  "version": "0.0.0",
+  "description": "Hide front-matter from the list",
+  "keywords": [],
+  "repository": "https://github.com/Fus1onDev/inkdrop-hide-front-matter",
+  "license": "MIT",
+  "engines": {
+    "inkdrop": "^5.x"
+  },
+  "dependencies": {
+    "remove-markdown": "^0.5.0",
+    "white-matter": "^0.1.0"
+  }
+}
