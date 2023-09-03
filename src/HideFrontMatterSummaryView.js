@@ -1,14 +1,12 @@
-'use babel'
-
 import React from 'react'
 import removeMd from 'remove-markdown'
 
 function parseContent(markdown) {
-  const match = /^---\n([\s\S]+?)\n---\n/.exec(markdown);
+  const match = /^---\n([\s\S]+?)\n---\n/.exec(markdown)
   if (match) {
-    return markdown.slice(match[0].length);
+    return markdown.slice(match[0].length)
   } else {
-    return markdown;
+    return markdown
   }
 }
 
@@ -21,9 +19,5 @@ export default function HideFrontMatterSummaryView(props) {
       return removeMd(props.body.slice(0, 80))
     }
   }
-  return (
-    <span className='text'>
-      {getSummary()}
-    </span>
-  )
+  return <span className="text">{getSummary()}</span>
 }
