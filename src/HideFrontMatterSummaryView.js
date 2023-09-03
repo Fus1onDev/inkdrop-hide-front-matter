@@ -1,12 +1,20 @@
 'use babel'
 
-import * as React from 'react'
-const matter = require('white-matter')
-const removeMd = require('remove-markdown')
+import React from 'react'
+import removeMd from 'remove-markdown'
+
+function parseContent(markdown) {
+  const match = /^---\n([\s\S]+?)\n---\n/.exec(markdown);
+  if (match) {
+    return markdown.slice(match[0].length);
+  } else {
+    return markdown;
+  }
+}
 
 export default function HideFrontMatterSummaryView(props) {
   function getSummary() {
-    const { content } = matter(props.body)
+    const content = parseContent(props.body)
     if (content) {
       return removeMd(content.slice(0, 80))
     } else {
@@ -19,17 +27,3 @@ export default function HideFrontMatterSummaryView(props) {
     </span>
   )
 }
-
-export function registerAsNoteListItemSummaryView() {
-  inkdrop.components.registerClass(
-    HideFrontMatterSummaryView,
-    'NoteListItemSummaryView'
-  )
-}
-
-/* export function unregisterAsNoteListItemSummaryView() {
-  inkdrop.components.deleteClass(
-    HideFrontMatterSummaryView,
-    'NoteListItemSummaryView'
-  ) 
-} */
