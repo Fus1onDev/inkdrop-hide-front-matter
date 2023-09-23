@@ -6,7 +6,15 @@
 | - | - |
 | ![](media/ss1.png) | ![](media/ss2.png) |
 
+> [!WARNING]
+> 
+> This plugin has been found to work only when used with a plugin that replaces note lists, such as `thumbnail-list`.
+
 ## Changelog
+
+### 0.1.2
+
+- Add an warning to README
 
 ### 0.1.1
 
