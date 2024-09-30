@@ -11,9 +11,13 @@
 
 ## Changelog
 
+### 0.1.4
+
+- Update missing change
+
 ### 0.1.3
 
-- Fix odd display in v5.9.0
+- Fix odd display of summary in v5.9.0
 
 ### 0.1.2
 
