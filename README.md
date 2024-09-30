@@ -11,6 +11,10 @@
 
 ## Changelog
 
+### 0.1.3
+
+- Fix odd display in v5.9.0
+
 ### 0.1.2
 
 - Add an warning to README
