@@ -19,5 +19,5 @@ export default function HideFrontMatterSummaryView(props) {
       return removeMd(props.body.slice(0, 80))
     }
   }
-  return <span className="text">{getSummary()}</span>
+  return <span className="text summary">{getSummary()}</span>
 }
